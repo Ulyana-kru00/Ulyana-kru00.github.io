@@ -3,6 +3,7 @@ body{
     font-family: 'Iskra', arial;
     background: #F2F2F2;
     background-repeat: no-repeat;
+    overflow-x: hidden;
 }
 .header{
     max-width: 1200px;
