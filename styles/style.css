@@ -469,7 +469,7 @@ body{
         flex-basis: 40%;
     }
 }
-@media(max-width:1510px){
+@media(max-width:30000px){
     .header_buttons{
         display: none;
     }
