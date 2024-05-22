@@ -29,7 +29,7 @@ body{
     gap:240px;
 }
 .header_list li button{
-    border-style: none;
+    border: none;
 }    
 .header_link{
     color: black;
