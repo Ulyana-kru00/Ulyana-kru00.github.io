@@ -1,4 +1,29 @@
 @import url(https://myfonts.ru/myfonts?fonts=iskra);
+#preloader {
+  position: fixed;
+  top:0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#preloader.hide-preloader {
+  animation: hidePreloader 1s;
+} 
+#preloader.preloader-hidden{
+  display: none;
+}
+@keyframes hidePreloader{
+  0%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}
 body{
     font-family: 'Iskra', arial;
     background: #CACACA;
@@ -30,7 +55,7 @@ body{
 }
 .header_list li button{
     border: none;
-}  
+}    
 .header_link{
     color: black;
     text-decoration: none;
@@ -202,8 +227,77 @@ body{
     padding-left: 140px;
     padding-right: 15px;
 }
-.main4{
+.chacha{
+    width: 420px;
+    height: 450px;
+    background-color: #F2F2F2;
+    padding: 1em;
+    box-shadow: 0 11px 48px rgba(0, 0, 0, .2);
+    border-radius: 15px;
+}
+.chacha div
+{
     display: flex;
+    width: 335px;
+    background-color: #FFFFFF;
+    border-radius: 7px;
+    margin-top: 36px;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.votka p{
+    padding-left: 4%;
+}
+.main4{
+    justify-content: space-between;
+}
+.gavgav{
+    margin-top: 127px;
+    margin-left: 338px;
+}
+.sifri
+{
+    display:flex;
+    margin-top: -35px;
+    margin-left: 268px;
+}
+.yxoditvar{
+    margin-left: 264px;
+    margin-top: 17px;
+}
+.sifri div{
+    Width:66px;
+    Height:66px;
+    border-radius: 5px;
+    background-color:#213A8F;
+}
+.sifri div:not(:first-child)
+{
+    margin-left: 32px;
+}
+.gubil
+{
+    margin-top: 12px;
+    color:#fff;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    
+}
+.gubil1
+{
+    margin-top: 12px;
+    color:#fff;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 32px;
+    text-align: center;
+    margin-left: 17px;
+}
+.flexitgerdiai{
+    display: flex;
+    width: 90%;
     justify-content: space-between;
 }
 .main_image4{
@@ -214,7 +308,8 @@ body{
     margin-top: -14%;
 }
 .main_text4{
-    flex-basis: 476px;
+    margin-left: 272px;
+    margin-top: 78px;
 }
 .main_title4{
     font-size: 36px;
@@ -296,11 +391,146 @@ body{
     transform: translate(-50%, -50%);
     object-fit: cover; */
 }
-.main_img7{
-    width: 100%;
-    margin-bottom: 10%;
-    margin-top: 10%;
+
+
+
+.card_loh{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    width: 80%;
+    margin-left: 7%;
 }
+.card_blin{
+    padding: 30px;
+}
+.card_cotik{
+    width: 131%;
+    height: 170px;
+}
+.tyda{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #009974;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-top: 8%;
+    margin-left: 30px;
+}
+.tyda1{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #009974;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-top: 8%;
+    margin-left: 30px;
+}
+.container7{
+    width:100%;
+    margin-left: 14%;
+}
+.bliat{
+    padding-top: 7px;
+}
+.ofisha{
+    display:flex;
+    width:70%;
+    text-align: center;
+    align-items: center;
+    font-size: 26px;
+}
+.otrizka{
+    display: flex;
+    background-color: #fff;
+    border-radius: 7px;
+    Width: 123px;
+    Height: 48px;
+    text-align: center;
+    padding-left: 17px;
+}
+.vsegoroda p{
+    font-family:Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    text-align: left;
+}
+.vsegoroda{
+    margin-left: 13px;
+
+}
+.afisha20 {
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+}
+.chenada{
+    width: 110px;
+    height: 40px;
+    color: #009974;
+    border-radius: 7px;
+    border: 2px solid #E6E6E6;
+    background-color: #F2F2F2;  
+}
+.chenada1{
+    width: 110px;
+    height: 40px;
+    color: #009974;
+    border-radius: 7px;
+    border:2px solid #009974;
+    background-color: #F2F2F2;  
+}
+.ww{
+    color: #B3B3B3;
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+    font-size: 10px;
+}
+.offnis{
+    width: 1080px;
+    height: 64px;
+    top: 3554px;
+    left: 143px;
+    gap: 0px;
+    border-radius: 12px;
+    opacity: 0px;
+    background-color: #FFFFFF;
+    display: flex;
+    width: 80%;
+    justify-content: space-evenly;
+    box-shadow: 0px 7px 30px -7px #00000026;
+    margin-top: 20px;
+}
+.rad{
+    width: 1px;
+    font-size: 12px;
+}
+.card{
+    color: #009974;
+}
+.tyda2{
+    width: 32px;
+    height: 32px;
+    background-color: white;
+    color: #009974;
+    border: none;
+    font-size: 20px;
+    border-radius: 7px;
+    margin-top: 8%;
+    margin-left: 30px;
+}
+.card1{
+    color: black;
+}
+
+
 .container8{
     max-width: 1200px;
     margin: 0 auto;
@@ -431,6 +661,33 @@ body{
     flex: 1 0 50%; 
     color: #009974;
 }
+.mya{
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left: 11%;
+}
+.krvsa{
+    padding: 50px;
+
+}
+.imggovno{
+    width: 100%;
+    height: 115px;
+
+}
+.cardskyka{
+    color: #009974;
+}
+.cardblyt{
+    color: black;
+}
+
+
+
+
+
+
+
 @media(max-width: 1238px){
     .header_list {
         margin-left: -62%;
